@@ -15,3 +15,14 @@ body {
   cursor: grab;
 }
 
+.past-due {
+  background-color: #ffcccc; 
+}
+
+.due-tomorrow {
+  background-color: #fffccc; 
+}
+
+.future-due {
+  background-color: #ccffcc; 
+}

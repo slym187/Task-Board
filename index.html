@@ -26,7 +26,7 @@
     </div>
     <!-- Todo: Create a modal with a form to add tasks -->
 
-    <!-- Add this div for the modal -->
+<!-- Modal -->
 <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -37,26 +37,28 @@
       <div class="modal-body">
         <form id="taskForm">
           <div class="mb-3">
-            <label for="taskTitle" class="form-label">Task Title</label>
-            <input type="text" class="form-control" id="taskTitle" name="taskTitle" required>
+            <label for="taskName" class="form-label">Task Name</label>
+            <input type="text" class="form-control" id="taskName" required>
           </div>
           <div class="mb-3">
             <label for="taskDescription" class="form-label">Task Description</label>
-            <textarea class="form-control" id="taskDescription" name="taskDescription" required></textarea>
+            <textarea class="form-control" id="taskDescription" rows="3"></textarea>
           </div>
           <div class="mb-3">
             <label for="dueDate" class="form-label">Due Date</label>
-            <input type="date" class="form-control" id="taskdueDate" name="dueDate" required>
+            <input type="date" class="form-control" id="dueDate">
           </div>
-          <button type="submit" class="btn btn-primary">Add Task</button>
         </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="addTaskBtn">Add Task</button>
       </div>
     </div>
   </div>
 </div>
 
 
-    
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
@@ -99,20 +101,7 @@
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
-  <script src="./assets/js/script.js">
-    document.addEventListener("DOMContentLoaded", function () {
-      var modal = document.getElementById("formModal");
-      var exitButton = document.querySelector("#formModal .btn-close");
-
-      // Add event listener to the exit button
-      exitButton.addEventListener("click", function () {
-        modal.style.display = "none";
-      });
-    });
-  </script>
-
-  
-    
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
