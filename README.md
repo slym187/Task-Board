@@ -9,11 +9,12 @@ This project is a Task Board which will allow you to create task, and based on t
 
 # Credits
 - Xpert Learning Assitance
-- day.js
+- chat gpt
+  
   
   
 # Link To Deployed Page
-
+https://slym187.github.io/Task-Board/
 
 # License
 Please refer to the LICENSE in the repo.
